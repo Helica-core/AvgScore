@@ -1,14 +1,3 @@
-javascript:(function(){
-	alert("gg");
-	var main=window.frames["bottomFrame"].frames["mainFrame"];
-	main.document.querySelector(".displayTag").style.backgroundColor='red';
-})();
-
-
-
-javascript:(function(){document.getElementById("intro").style.backgroundColor='red';})();
-javascript:(function(){alert("helloworld");})();
-
 javascript:(function () {
 	var main=window.frames["bottomFrame"].frames["mainFrame"];
 	var tab = main.document.querySelector(".displayTag");
