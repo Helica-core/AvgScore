@@ -8,10 +8,10 @@ javascript:(function () {
 		var tmp_g = 0;
 		for (var j = 0;j < tab.rows[i].cells.length ;j++) {
 			if(j == 4) {
-				total_g += parseFloat(tab.rows[i].cells[j].innerHTML.replace(/[^0-9]/ig,""));
-				tmp_g = parseFloat(tab.rows[i].cells[j].innerHTML.replace(/[^0-9]/ig,""));
+				var s = tab.rows[i].cells[j].innerHTML.replace(/\./,"0.");
+				total_g += parseFloat(s.replace(/[^0-9\.]/ig,""));
+				tmp_g = parseFloat(s.replace(/[^0-9\.]/ig,""));
 			}
-
 			else if(j == 6) {
 				tmp_score = parseFloat(tab.rows[i].cells[j].innerHTML.replace(/[^0-9]/ig,""));
 				if(tmp_score == "" || isNaN(tmp_score) ){
